@@ -23,8 +23,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: create a file in repository
       run: |
-            ls -al
-            touch CNAME
-            echo ajkim.me > CNAME
+        ls -al
+        touch CNAME
+        echo ajkim.me > CNAME
       
       
