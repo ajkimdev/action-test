@@ -22,8 +22,10 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: create a file in repository
-      run: |
-        touch CNAME
-        echo ajkim.me > CNAME
+      run: touch CNAME
+    - name: put cname in the file
+      run: echo ajkim.me > CNAME
+    - name: check file
+      run: cat CNAME
       
       
